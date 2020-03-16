@@ -1,0 +1,23 @@
+.header {
+    padding-top: 35px;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+}   
+
+.header-menu {
+    display: flex;
+    &__link {
+        font-size: 24px;
+        padding: 10px 30px 30px;
+        transition: color .3s ease-in-out;
+        &:hover {
+            color: $colorGreen;
+        }
+        &.active {
+            border-bottom: 1px solid $colorOrange;
+            color: $colorGreen;
+        }
+    }
+}

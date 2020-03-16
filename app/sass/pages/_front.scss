@@ -1,0 +1,128 @@
+.section-top {
+    margin-top: 0;
+    &__img {
+        @include col();
+        @include size(12);
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 100px;
+        .social-buttons {
+            position: absolute;
+            bottom: 50px;
+            left: 0;
+        }
+    }
+    &__wrapper {
+        position: relative;
+        
+    }
+}
+.section-tables {
+    .tables-wrapper {
+        @include row-flex();
+    }
+    .common-table {
+        @include col();
+        @include size(12);
+    }
+    &__content {
+        display: flex;
+        @include row-flex();
+        div {
+            @include col();
+            @include size(6);
+        }
+        
+    }
+    &__playOffTables {
+        @include row-flex();
+        justify-content: space-between;
+        .common-table_playOff {
+            @include col();
+            @include size(5);
+            tr {
+                &:first-child {
+                    border-top: 1px solid $colorBorder;
+                }
+                td:first-child {
+                    text-align: right;
+                    .common-table__wrapper {
+                        flex-direction: row-reverse;
+                    }
+                    .common-table__teamIcon {
+                        margin-right: 0;
+                        margin-left: 15px;
+                    }
+                }
+                td:last-child {
+                    text-align: left;
+                }
+            }
+        }
+        .common-table_final {
+            @include col();
+            @include size(4);
+            tr {
+                border-bottom: none;
+            }
+            thead {
+                border-bottom: 1px solid $colorBorder;
+            }
+            tbody tr:last-child{
+                border-bottom: 1px solid $colorBorder;
+                //border-top: 1px solid $colorBorder;
+            }
+            td[rowspan] {
+                padding: 0 10px;
+                border-bottom: 1px solid $colorBorder;
+            }
+        }
+    }
+    .divider {
+        @include col();
+        @include size(1);
+    }
+    
+}
+.section-sponsors {
+    .sponsors {
+        @include row-flex();
+        &__item {
+            @include col();
+            width: 10%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            
+        }
+    }
+}
+.section-media {
+    &__container {
+        @include row-flex();
+    }
+    &__content {
+        @include col();
+        @include size(4);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &__bg {
+        @include col();
+        @include size(8);
+    }
+    &__figure {
+        display: flex;
+        flex-direction: column;
+        img {
+            width: 100%;
+        }
+        figcaption {
+            text-align: right;
+        }
+    }
+}

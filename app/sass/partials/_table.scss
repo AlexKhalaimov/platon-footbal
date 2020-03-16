@@ -1,0 +1,113 @@
+.common-table {
+    
+    &_main {
+        margin-top: 50px;
+        margin-bottom: 35px;
+        td:nth-child(5), td:nth-last-child(1), td:nth-last-child(2) {
+            border-left: 1px solid $colorBorder;
+        }
+        th:nth-child(3), th:nth-last-child(1), th:nth-last-child(2) {
+            border-left: 1px solid $colorBorder;
+        }
+    }
+    td {
+        text-align: center;
+        vertical-align: middle;
+        padding: 10px 5px;
+    }
+    
+    th {
+        font-weight: bold;
+        padding: 10px 5px;
+    }
+    tr {
+        border-bottom: 1px solid $colorBorder;
+    }
+    &__wrapper {
+        display: inline-flex;
+        align-items: center;
+        &_column {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    &__rate {
+        width: 60px;
+    }
+    &__rateIcon {
+        width: 23px;
+        height: 27px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        &_up {
+            background-image: url(../img/triangle_up.png);
+        }
+        &_down {
+            background-image: url(../img/triangle_down.png);
+        }
+    }
+    td.common-table__team {
+        text-align: left;
+        width: 20%;
+        min-width: 280px;
+    }
+    &__teamIcon {
+        width: 50px;
+        height: 50px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-right: 15px;
+
+        // DELETE THIS after deploy:
+        &_gaz {
+            background-image: url(../img/Gazmyas.png);
+        }
+        &_dyn {
+            background-image: url(../img/dyn.png);
+        }
+        &_shak {
+            background-image: url(../img/shak.png);
+        }
+        &_mar {
+            background-image: url(../img/mar.png);
+        }
+        &_mc {
+            background-image: url(../img/mc.png);
+        }
+        &_mu {
+            background-image: url(../img/mu.png);
+        }
+        &_ars {
+            background-image: url(../img/ars.png);
+        }
+        &_ch {
+            background-image: url(../img/ch.png);
+        }
+        &_br {
+            background-image: url(../img/br.png);
+        }
+        &_re {
+            background-image: url(../img/re.png);
+        }
+        &_am {
+            background-image: url(../img/am.png);
+        }
+        &_va {
+            background-image: url(../img/va.png);
+        }
+        &_ju {
+            background-image: url(../img/ju.png);
+        }
+        &_na {
+            background-image: url(../img/na.png);
+        }
+        &_la {
+            background-image: url(../img/la.png);
+        }
+        &_in {
+            background-image: url(../img/in.png);
+        }
+    }
+}
